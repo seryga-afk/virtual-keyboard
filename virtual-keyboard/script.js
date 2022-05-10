@@ -527,7 +527,7 @@ BODY.addEventListener('keydown',(e)=>{
     TEXTAREA.value = delLast.join("")
   }else if(e.code === 'Enter'){
   TEXTAREA.value += `\n`
-  }else if(e.code === 'ShiftLeft'){
+  }else if(e.code === 'ShiftLeft' || e.code === 'ShiftRight'){
     TEXTAREA.value += ''
   }else if(e.code === 'CapsLock'){
     if(caps){
